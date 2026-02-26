@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Upload, FileText, Activity, User, Brain, AlertCircle, CheckCircle, Image as ImageIcon, Info, ShieldAlert, Microscope, Stethoscope, ClipboardList } from 'lucide-react';
+import { Upload, FileText, Activity, User, Brain, AlertCircle, Image as ImageIcon, Info, ShieldAlert, Microscope, Stethoscope, ClipboardList } from 'lucide-react';
 
 // Types
 interface AnalysisResult {
