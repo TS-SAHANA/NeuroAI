@@ -36,7 +36,7 @@ function App() {
     formData.append('file', file);
 
     try {
-      const response = await axios.post('http://localhost:8000/analyze', formData);
+      const response = await axios.post('https://neuroai-backend-8lim.onrender.com/analyze', formData);
       setResult(response.data);
       setActiveTab('imaging'); 
     } catch (err) {
@@ -60,7 +60,7 @@ function App() {
     formData.append('confidence', result.confidence.toString());
     formData.append('location', result.location);
 
-    const response = await axios.post('http://localhost:8000/report', formData, { responseType: 'blob' });
+    const response = await axios.post('https://neuroai-backend-8lim.onrender.com/report', formData, { responseType: 'blob' });
     const url = window.URL.createObjectURL(new Blob([response.data]));
     const link = document.createElement('a');
     link.href = url;
