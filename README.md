@@ -17,20 +17,20 @@ NeuroAI is a full-stack, AI-powered web application designed to assist radiologi
 
 ### 1. Backend Setup
 Navigate to the root directory and set up the Python environment:
-\`\`\`bash
+```
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 cd backend
 pip install -r requirements.txt
 python main.py
-\`\`\`
+```
 *The backend will run on http://localhost:8000*
 
 ### 2. Frontend Setup
 Open a new terminal and navigate to the frontend directory:
-\`\`\`bash
+```
 cd frontend
 npm install
 npm run dev
-\`\`\`
+```
 *The frontend will run on http://localhost:5173*
